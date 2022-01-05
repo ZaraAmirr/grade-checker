@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1> Grade Checker </h1>
+
+<input type="number"id="num1">
+<button OnClick="Checker()" >Enter Numbers</button>
+
+<h2 id = "grade"></h2>
+
+
+<script>
+
+function Checker() {
+
+
+var num2 = document.getElementById("num1").value;
+       
+        if (num2 >= 0 && num2 < 30) {
+
+            document.getElementById("grade").innerText = "Grade : You are fail(F)";
+         
+        }
+        else if (num2 >= 30 && num2 < 50) {
+
+            document.getElementById("grade").innerText = "Grade : You pass the exams(D)";
+        } else if (num2 >= 50 && num2 < 65){
+
+            document.getElementById("grade").innerText = "Grade : You are passed(C)";
+         
+        }else if(num2 >=65 && num2 < 80){
+
+            document.getElementById("grade").innerText = "Grade : You are passed.Great Job(B)";
+         
+        }else if (num2 >= 80 && num2 < 90){
+            
+            document.getElementById("grade").innerText = "Grade : Congratulations! You did very well(A))";
+
+        } else if (num2 >= 90 && num2 < 100){
+
+            document.getElementById("grade").innerText = "Grade : Congratulation! Brilliant Result.(A+)";
+         
+        }
+
+}
+
+
+</script>
+
+
+</body>
+</html>
